@@ -1,6 +1,7 @@
 import os
 import webbrowser
 import file_operations as fo
+from offer import Offer
 
 with open ('applied.txt', 'r') as file:
 	for line in file:

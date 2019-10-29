@@ -1,6 +1,7 @@
 '''
 monster.it scrapper for new jobs containing 'linux'
 '''
+from offer import Offer
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import requests
@@ -13,11 +14,10 @@ def scrap_linux_bologna():
     r=requests.get("https://www.monster.it/lavoro/cerca/?q=linux&where=Bologna__2C-Emilia-Romagna&client=classic&cy=it&rad=30&intcid=swoop_Hero_Search")
     soup = BeautifulSoup(r.content, 'html.parser')
     for a in soup.findAll('div', attrs={'class':'summary'}):
-        name=a.find('a',href=True)
-        with open('monster_linux_daily.txt', 'a') as file:
-            file.write(name['href'])
-            file.write('\n')
-
+        name = (a.find('a',href=True))
+        link = name['href']
+        Offer(link).save_to_file()
+        
 def scrap_linux_milan():
     # retrieve links to all recent offers in Milan + 30km related to 'linux'
     driver = webdriver.Chrome()
@@ -25,7 +25,6 @@ def scrap_linux_milan():
     r=requests.get("https://www.monster.it/lavoro/cerca/?q=Linux&where=Milano__2C-Lombardia&client=classic&cy=it&rad=40&intcid=swoop_Hero_Search")
     soup = BeautifulSoup(r.content, 'html.parser')
     for a in soup.findAll('div', attrs={'class':'summary'}):
-        name=a.find('a',href=True)
-        with open('monster_linux_daily.txt', 'a') as file:
-            file.write(name['href'])
-            file.write('\n')
+        name = (a.find('a',href=True))
+        link = name['href']
+        Offer(link).save_to_file()
