@@ -22,3 +22,4 @@ def scrap_linux_milan():
         name = (a.find('a',href=True))
         link = name['href']
         Offer(link).save_to_file()
+        
