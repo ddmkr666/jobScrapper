@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8105ca4d-5174-4c6d-931f-72a0db9b6274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applied.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/applied.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helplavoro.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/helplavoro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/indeed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobrapido.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/jobrapido.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list_of_jobs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/list_of_jobs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monster.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/monster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/offer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apply.py" beforeDir="false" afterPath="$PROJECT_DIR$/apply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/applied.txt" beforeDir="false" afterPath="$PROJECT_DIR$/applied.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/list_of_jobs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/list_of_jobs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seen_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/seen_links.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpages/indeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/indeed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpages/jobrapido.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/jobrapido.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +29,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adayi\PycharmProjects\jobScrapper" />
       <recent name="C:\Users\adayi\PycharmProjects\jobScrapper\files" />
       <recent name="C:\Users\adayi\PycharmProjects\files" />
       <recent name="C:\Users\adayi\PycharmProjects\jobScrapper\webpages" />
@@ -53,7 +50,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scrapper">
+  <component name="RunManager" selected="Python.apply">
+    <configuration name="apply" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jobScrapper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apply.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="helplavoro" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="jobScrapper" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.apply" />
         <item itemvalue="Python.scrapper" />
         <item itemvalue="Python.offer" />
         <item itemvalue="Python.helplavoro" />
@@ -150,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572434335488</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added description to Offer(), changed directory structure">
+      <created>1572446501625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572446501625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +195,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed selenium" />
     <MESSAGE value="added additional websites to scrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="added additional websites to scrap" />
+    <MESSAGE value="added description to Offer(), changed directory structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="added description to Offer(), changed directory structure" />
   </component>
 </project>

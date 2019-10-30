@@ -1,35 +1,42 @@
 import os
 import webbrowser
-import file_operations as fo
-from offer import Offer
+import csv
+#from offer import Offer
 
-with open ('applied.txt', 'r') as file:
-	for line in file:
-		applied_count=int(line)
+script_dir = os.path.dirname(__file__)
+applied_count = open('applied.txt', 'r').read()
 
-active_links=fo.create_list_old_links()
-seen_links=fo.create_list_seen_links()
+#seen_links = open(os.path.join(script_dir, 'files/seen_links.txt')).read().splitlines()
+#active_links = open(os.path.join(script_dir, 'files/list_of_jobs.txt')).read().splitlines()
 
-for link in active_links[:]:
-	print("Offer: " + link)
-	input("Open in browser. Press Enter.\n")
-	webbrowser.open_new(link)
-	try:
-		applied=input("Applied? Press y/n")
-		if applied[0] == 'y':
-			applied_count += 1
-			print('You have applied for: ' + str(applied_count) + ' jobs.\n')	
-	
-	except:
-		continue
-	seen_links.append(link)
-	active_links.remove(link)
+active_links=[]
+with open(os.path.join(script_dir, 'files/list_of_jobs.txt'), 'r') as csvFile:
+    reader = csv.reader(csvFile)
+    for row in reader:
+        active_links.append(row)
+csvFile.close()
 
-with open ('applied.txt', 'w') as file:
-	file.write(str(applied_count))
 
-with open ('seen_links.txt', 'a') as file:
-	for line in seen_links:
-		file.write(line)
-os.remove('list_of_jobs.txt')
+for link in active_links:
+    print("Offer: " + link[0])
+    input("Open in browser. Press Enter.\n")
+    webbrowser.open_new(link[1])
+# 	try:
+# 		applied=input("Applied? Press y/n")
+# 		if applied[0] == 'y':
+# 			applied_count += 1
+# 			print('You have applied for: ' + str(applied_count) + ' jobs.\n')
+#
+# 	except:
+# 		continue
+# 	seen_links.append(link)
+# 	active_links.remove(link)
+#
+# with open ('applied.txt', 'w') as file:
+# 	file.write(str(applied_count))
+#
+# with open ('seen_links.txt', 'a') as file:
+# 	for line in seen_links:
+# 		file.write(line)
+# os.remove('list_of_jobs.txt')
 
