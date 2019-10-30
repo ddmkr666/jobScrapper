@@ -10,14 +10,18 @@ def scrap_linux_bologna():
     r = requests.get("https://www.helplavoro.it/ricerca/linux/in-provincia-di-bologna.html")
     soup = BeautifulSoup(r.content, 'html.parser')
     for a in soup.findAll('a', attrs={'class': 'posizione link-offerta'}):
+        description = a['title'][18::].title()
         link = 'https://www.helplavoro.it' + a['href']
-        Offer(link).save_to_file()
+        Offer(description, link).save_to_file()
+
+
         
 def scrap_linux_milan():
     # retrieve links to all recent offers in Milan + 30km related to 'linux'
     r = requests.get("https://www.helplavoro.it/ricerca/linux/in-provincia-di-milano.html")
     soup = BeautifulSoup(r.content, 'html.parser')
     for a in soup.findAll('a', attrs={'class':'posizione link-offerta'}):
+        description = a['title'][18::].title()
         link = 'https://www.helplavoro.it' + a['href']
-        Offer(link).save_to_file()
+        Offer(description, link).save_to_file()
         

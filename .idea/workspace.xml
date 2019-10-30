@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8105ca4d-5174-4c6d-931f-72a0db9b6274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jobScrapper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helplavoro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/indeed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobrapido.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list_of_jobs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/list_of_jobs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monster.py" beforeDir="false" afterPath="$PROJECT_DIR$/monster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applied.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/applied.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helplavoro.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/helplavoro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/indeed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobrapido.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/jobrapido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list_of_jobs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/list_of_jobs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monster.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpages/monster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/offer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seen_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/seen_links.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +27,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adayi\PycharmProjects\jobScrapper\files" />
+      <recent name="C:\Users\adayi\PycharmProjects\files" />
+      <recent name="C:\Users\adayi\PycharmProjects\jobScrapper\webpages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\adayi\PycharmProjects\jobScrapper" />
     </key>
@@ -61,7 +66,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/helplavoro.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\adayi\PycharmProjects\jobScrapper\webpages\helplavoro.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="offer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jobScrapper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/offer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,6 +120,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.scrapper" />
+        <item itemvalue="Python.offer" />
         <item itemvalue="Python.helplavoro" />
       </list>
     </recent_temporary>
@@ -116,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572429696327</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added additional websites to scrap">
+      <created>1572434335488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572434335488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,7 +158,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -132,6 +168,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed selenium" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed selenium" />
+    <MESSAGE value="added additional websites to scrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="added additional websites to scrap" />
   </component>
 </project>

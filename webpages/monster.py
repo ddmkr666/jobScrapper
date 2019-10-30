@@ -11,8 +11,9 @@ def scrap_linux_bologna():
     soup = BeautifulSoup(r.content, 'html.parser')
     for a in soup.findAll('div', attrs={'class':'summary'}):
         name = (a.find('a',href=True))
+        description = str(name.contents)[2:-6:].title()
         link = name['href']
-        Offer(link).save_to_file()
+        Offer(description, link).save_to_file()
         
 def scrap_linux_milan():
     # retrieve links to all recent offers in Milan + 30km related to 'linux'
@@ -20,6 +21,6 @@ def scrap_linux_milan():
     soup = BeautifulSoup(r.content, 'html.parser')
     for a in soup.findAll('div', attrs={'class':'summary'}):
         name = (a.find('a',href=True))
+        description = str(name.contents)[2:-6:].title()
         link = name['href']
-        Offer(link).save_to_file()
-        
+        Offer(description, link).save_to_file()
